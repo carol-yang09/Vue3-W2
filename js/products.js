@@ -5,7 +5,7 @@ const app = {
     products: [],
   },
   getProducts() {
-    axios.get(`${this.data.apiUrl}api/${this.data.apiPath}/products/all`)
+    axios.get(`${this.data.apiUrl}api/${this.data.apiPath}/admin/products/all`)
       .then((res) => {
         if (res.data.success) {
           this.data.products = res.data.products;
